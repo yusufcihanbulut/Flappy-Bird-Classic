@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class Move : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float speed;
 
-    // Update is called once per frame
-    void Update()
+    public void Start()
     {
-        
+        Destroy(gameObject,7);
+    }
+    void FixedUpdate()
+    {
+        transform.position += Vector3.left * speed * Time.deltaTime; 
     }
 }

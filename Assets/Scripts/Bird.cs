@@ -7,7 +7,7 @@ public class Bird : MonoBehaviour
 {
     public float velocity = 1f;
     public Rigidbody2D rb2D;
-    
+    public bool IsDead;
 
     void Update()
     {
