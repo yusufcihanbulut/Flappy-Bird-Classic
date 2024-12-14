@@ -157,7 +157,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 401}
-  m_SizeDelta: {x: 250, y: 100}
+  m_SizeDelta: {x: 350, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &73987628
 MonoBehaviour:
@@ -334,8 +334,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 230}
-  m_SizeDelta: {x: 250, y: 100}
+  m_AnchoredPosition: {x: 0, y: 177.8}
+  m_SizeDelta: {x: 350, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &185459370
 MonoBehaviour:
@@ -1198,6 +1198,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 5544642932616506883, guid: a2aca5214453b9a44a2727e64812b6aa, type: 3}
+      propertyPath: speed
+      value: 2.7
+      objectReference: {fileID: 0}
     - target: {fileID: 6192184895977060965, guid: a2aca5214453b9a44a2727e64812b6aa, type: 3}
       propertyPath: m_TagString
       value: DeadArea
@@ -1379,7 +1383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b739b3875b8d4cf43aebe9b961b9121d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreText: {fileID: 0}
+  ScoreText: {fileID: 2130618145}
   score: 0
 --- !u!1 &2059250556
 GameObject:
@@ -1476,7 +1480,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 25
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a0dad0e7c6c6f3f49ad0b2416bd0e76c, type: 2}
   m_sharedMaterial: {fileID: 9217029581855862892, guid: a0dad0e7c6c6f3f49ad0b2416bd0e76c, type: 2}

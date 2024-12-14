@@ -18,11 +18,13 @@ public class Birdy : MonoBehaviour
         {
             rb2D.velocity = Vector2.up * velocity;
         }
+        transform.rotation = Quaternion.Euler(0, 0, 0);
     }
 
     private void Start()
     {
         Time.timeScale = 1;
+        rb2D.freezeRotation = true;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
