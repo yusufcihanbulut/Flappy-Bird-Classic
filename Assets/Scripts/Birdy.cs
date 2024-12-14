@@ -9,11 +9,37 @@ public class Birdy : MonoBehaviour
     public Rigidbody2D rb2D;
     public bool IsDead;
 
+    public GameManager managerGame;
+    public GameObject DeathScreen;
+
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
             rb2D.velocity = Vector2.up * velocity;
+        }
+    }
+
+    private void Start()
+    {
+        Time.timeScale = 1;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.name == "ScoreArea")
+        {
+            managerGame.UpdateScore();
+        }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "DeadArea")
+        {
+            IsDead = true;
+            Time.timeScale = 0;
+
+            DeathScreen.SetActive(true);
         }
     }
 }

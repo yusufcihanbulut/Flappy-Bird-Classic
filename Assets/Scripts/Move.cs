@@ -8,7 +8,7 @@ public class Move : MonoBehaviour
 
     public void Start()
     {
-        Destroy(gameObject,7);
+        Destroy(gameObject,5);
     }
     void FixedUpdate()
     {
