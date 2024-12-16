@@ -1098,7 +1098,11 @@ MonoBehaviour:
   BirdScript: {fileID: 187278208}
   Borular: {fileID: 6649515161610686181, guid: a2aca5214453b9a44a2727e64812b6aa, type: 3}
   height: 0.3
-  time: 2
+  spawnInterval: 2.5
+  startDelay: 1.5
+  pipeSpeed: 2
+  speedIncreaseRate: 0.2
+  speedIncreaseInterval: 10
 --- !u!4 &945672091
 Transform:
   m_ObjectHideFlags: 0
@@ -1212,7 +1216,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7718415426245487091, guid: a2aca5214453b9a44a2727e64812b6aa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.44
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7718415426245487091, guid: a2aca5214453b9a44a2727e64812b6aa, type: 3}
       propertyPath: m_LocalPosition.y
